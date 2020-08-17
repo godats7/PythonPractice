@@ -1,4 +1,4 @@
-# 연산자 오버로딩
+# 메소드 오버라이딩
 
 class Unit: #일반 유닛  부모클래스
     def __init__(self,name,hp,speed): #__init__은 생성자
