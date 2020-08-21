@@ -1,4 +1,4 @@
-# 메소드 오버라이딩
+# 메소드오버라이딩
 
 class Unit: #일반 유닛  부모클래스
     def __init__(self,name,hp,speed): #__init__은 생성자
@@ -11,7 +11,7 @@ class Unit: #일반 유닛  부모클래스
 
 class AttackUnit(Unit): # Unit을 상속하는 AttackUnit  자식클래스
     def __init__(self,name,hp,speed,damage): 
-        Unit.__init__(self, name,hp,speed) #Unit에서 이름과 체력을 가져놈        
+        Unit.__init__(self, name,hp,speed) #Unit에서 이름과 체력을 가져옴        
         self.damage = damage
     def attack(self, location)    :
         print("{0} : {1}방향으로 적군을 공격합니다. [공격력은 {2}]".\
